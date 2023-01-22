@@ -1,0 +1,36 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+<div class="logo__center"><img
+    src="https://scontent.fisj1-1.fna.fbcdn.net/v/t39.30808-6/310966096_430741085838466_7919039735821324081_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=CVGjuCa3D04AX-YpUJW&_nc_ht=scontent.fisj1-1.fna&oh=00_AfDb8pYvP5_ATtdQcwNWVWEDsmk6Awg0nxRCafL1o4uWFQ&oe=63CF8436"
+    alt="logo" width="250px"></div>
+
+<h1 class=>¡Bienvenido!</h1>
+
+<div class="div__form-center">
+  <form class="formulario">
+    <p class="sesion__p">Iniciar Sesión</p>
+
+    <div class="mb-3 col">
+      <label class="col-sm-2 col-form-label">No.Control</label>
+      <div class="col-sm-12">
+        <input type="number" class="form-control" placeholder="No. Control" name="noControl"
+          [(ngModel)]="inputNoControl">
+      </div>
+    </div>
+    <div class="mb-3 col">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-12">
+        <input type="password" class="form-control" name="contraseña" placeholder="Password"
+          [(ngModel)]="inputPassword">
+      </div>
+    </div>
+    <a href="#" class="contraseña__ref">¿Olvidaste tu Contraseña?</a>
+    <button type="button" class="btn btn-primary sesion__Datos-button" (click)="datosUser()">Iniciar sesión</button>
+  </form>
+</div>
+
+<div class="nuevoIngreso__ref">
+  <p>¿Estudiante de nuevo ingreso?</p>
+  <a href="#" class="link-primary mb-2">Solicita una Cuenta</a>
+</div>
