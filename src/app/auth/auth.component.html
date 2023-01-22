@@ -15,18 +15,18 @@
       <label class="col-sm-2 col-form-label">No.Control</label>
       <div class="col-sm-12">
         <input type="number" class="form-control" placeholder="No. Control" name="noControl"
-          [(ngModel)]="inputNoControl">
+          [(ngModel)]="noControl">
       </div>
     </div>
     <div class="mb-3 col">
       <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
       <div class="col-sm-12">
         <input type="password" class="form-control" name="contraseña" placeholder="Password"
-          [(ngModel)]="inputPassword">
+          [(ngModel)]="password">
       </div>
     </div>
     <a href="#" class="contraseña__ref">¿Olvidaste tu Contraseña?</a>
-    <button type="button" class="btn btn-primary sesion__Datos-button" (click)="datosUser()">Iniciar sesión</button>
+    <button type="button" class="btn btn-primary sesion__Datos-button" (click)="login()">Iniciar sesión</button>
   </form>
 </div>
 
