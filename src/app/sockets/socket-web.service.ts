@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import io,{Socket} from 'socket.io-client'
 import { environment } from 'src/environments/environment.prod';
+import Swal from 'sweetalert2';
 
 
 
@@ -47,9 +48,42 @@ export class SocketWebService {
     this.socket!.disconnect();
   }
 
-  validar(){
+  validar(payload:any){
 
-    this.socket?.emit("validar",)
+    this.socket?.emit("validar",payload);
+
+  }
+
+  escucharRespuesta(){
+
+    this.socket?.on('resp', resp=>{
+
+      if(resp.status){
+
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: `${resp.massage}`,
+          showConfirmButton: false,
+          timer: 1500
+        })
+        
+
+      }
+
+      else{
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: `Error`,
+          showConfirmButton: false,
+          timer: 1500
+        })
+        
+      }
+      
+
+    })
 
   }
 

@@ -32,6 +32,7 @@ export class AuthComponent implements OnInit{
         if(resp.status){
 
           localStorage.setItem('token', resp.accessToken!);
+          localStorage.setItem('id',resp.user?._id!)
 
           Swal.fire({
             position: 'center',

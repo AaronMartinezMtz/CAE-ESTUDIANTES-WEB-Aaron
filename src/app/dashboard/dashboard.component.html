@@ -12,17 +12,7 @@
   <h3 class="text-center pt-3">¡¡Escanea el codigo QR!!</h3>
 
 
-    <qr-scanner
-
-            [debug]="false"
-            [canvasWidth]="100" 
-            [canvasHeight]="100" 
-            [stopAfterScan]="true" 
-            [updateTime]="500"
-            class="size"
-            > 
-    </qr-scanner>
-
+  <zxing-scanner class="size" (scanSuccess)="onCodeResult($event)"></zxing-scanner>
 
 
     

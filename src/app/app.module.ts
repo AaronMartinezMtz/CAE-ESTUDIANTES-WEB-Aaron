@@ -17,8 +17,7 @@ import { NgQrScannerModule } from 'angular2-qrscanner';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgQrScannerModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

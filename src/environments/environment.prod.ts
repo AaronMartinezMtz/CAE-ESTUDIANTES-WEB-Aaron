@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    urlBase: 'http://localhost:4000'
+    urlBase: 'http://cae.tectoucan.com'
   };
   

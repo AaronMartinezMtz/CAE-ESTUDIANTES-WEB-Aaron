@@ -4,12 +4,15 @@ import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: "", component: DashboardComponent,children:[
-    {
-      path: "home",
-      component: HomeComponent
-    }
-  ]}
+  {
+    path: "", component: DashboardComponent,
+    children:[
+      {
+        path: "Home",
+        component: HomeComponent
+      }
+    ]
+}
 ];
 
 @NgModule({

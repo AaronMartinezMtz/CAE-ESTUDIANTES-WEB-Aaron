@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import { NgQrScannerModule } from 'angular2-qrscanner';
 import { HomeComponent } from './home/home.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 
 
@@ -15,8 +15,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     CommonModule,
-    NgQrScannerModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ZXingScannerModule
   ]
 })
 export class DashboardModule { }
